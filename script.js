@@ -1,7 +1,7 @@
 // Load Comments using async/await
 async function loadComments() {
   try {
-    const response = await fetch("./data.json"); // ❗ You forgot 'await' here.
+    const response = await fetch("./data.json"); 
 
     if (!response.ok) {
       throw new Error("JSON file not loaded");
@@ -9,9 +9,10 @@ async function loadComments() {
 
     let data = await response.json();
 
-    displayComments(data.comments); // ❗ Pass data correctly
+    displayComments(data.comments); 
 
-  } catch (error) {
+  }
+   catch (error) {
     console.error("Error loading comments:", error);
   }
 }
@@ -20,11 +21,11 @@ async function loadComments() {
 function displayComments(comments) {
   let html = "";
 
-  comments.forEach(comment => { // ❗ Correct spelling: forEach
+  comments.forEach(comment => { 
     html += `
       <div class="comment-box">
         <div class="user-info">
-          <img src="${comment.user.image.png}" alt="${comment.user.username}">
+          <img src="${comment.user.image.png}" alt="${comment.user.username}" class= "imgsize">
           <span>${comment.user.username}</span>
           <span>${comment.createdAt}</span>
         </div>
@@ -49,7 +50,7 @@ function displayComments(comments) {
 function displayReplies(replies) {
   let repliesHTML = "";
 
-  replies.forEach(reply => { // ❗ Correct spelling: forEach
+  replies.forEach(reply => { 
     repliesHTML += `
       <div class="reply-box">
         <div class="user-info">
@@ -73,3 +74,15 @@ function displayReplies(replies) {
 
 // Start loading comments
 loadComments();
+
+
+
+
+
+
+
+
+
+
+
+
