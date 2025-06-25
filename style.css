@@ -15,11 +15,15 @@
     background-color: hsl(228, 33%, 97%);
 }
 
+#comment-container{
+    margin-top: 4vh;
+}
+
 .comment-contaienr {
     margin-top: 5vh;
     height: 17vh;
     width: 23rem;
-    border-radius: 2px;
+    border-radius: 10px;
     background-color: white;
 }
 
@@ -31,7 +35,10 @@
     width: 28rem;
     background-color: white;
     font-size: 8px;
-    color: hsl(211, 10%, 45%)
+    color: hsl(211, 10%, 45%);
+    border-radius: 8px;
+    margin-top: 0px;
+
 }
 
 .add-comments {
@@ -79,34 +86,37 @@ p {
     margin-top: -15.5%;
     gap: 4px;
     margin-left: 11px;
-    background-color: hsla(228  , 33%, 97%, 1) ;
+    background-color: hsla(228, 33%, 97%, 1);
     height: 11vh;
     width: 18px;
     border-radius: 6px;
 }
 
-.score-box button{
+.score-box button {
     background: none;
-    border: none ;
+    border: none;
     margin-left: auto;
     margin-right: auto;
-   padding-top: 24%;
+    padding-top: 24%;
+    color: hsl(239, 57%, 85%);
+    cursor: pointer;
 }
 
-.score-box span{
+.score-box span {
     display: inline-block;
     margin-left: auto;
     margin-right: auto;
+    color: hsl(238, 40%, 52%);
 }
 
 .reply-btn {
     position: absolute;
     cursor: pointer;
-    top: 9.4%;
-    left: 89%;
+    top: 13.4%;
+    left: 87%;
     background: none;
     border: none;
-    font-size: 13px;
+    font-size: 13px
 }
 
 .reply-btn::before {
@@ -118,3 +128,29 @@ p {
     background-repeat: no-repeat;
     background-size: contain;
 }
+
+.replies {
+    margin-top: 6vh;
+    margin-left: 3vw;
+}
+
+.reply-box {
+    position: relative;
+    height: 18vh;
+    width: 28rem;
+    background-color: white;
+    font-size: 8px;
+    color: hsl(211, 10%, 45%);
+    margin-top: 0vh;
+    border-radius: 6px;
+}
+
+
+.imgsizereply {
+    height: 5vh;
+    width: auto;
+    margin-left: 0vw;
+    margin-top: 11px;
+}
+
+
